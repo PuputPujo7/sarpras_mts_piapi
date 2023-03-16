@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/n1604621/public_html/sarprasmtspiapi.online
+    - /bin/cp -r * $DEPLOYPATH/sarprasmtspiapi.online #copy all from root
+#    - /bin/cp -r ./public/* $DEPLOYPATH/public_html/
+    - /bin/cp ./public/js/*.js $DEPLOYPATH/public_html/sarprasmtspiapi.online/public/js
+    - /bin/cp ./public/css/*.css $DEPLOYPATH/public_html/sarprasmtspiapi.online/public/css
